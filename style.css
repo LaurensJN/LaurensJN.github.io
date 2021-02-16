@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Left Main Main Right"
+    "Left Main Main Right"
+    "Left Main Main Right";
+}
+.Main { grid-area: Main;
+	background-color: #d3d3d3;
+}
+.Right { grid-area: Right; }
+.Left { grid-area: Left; }
+.h1 {
+text-align: center;
+}
