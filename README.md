@@ -1,2 +1,2 @@
-# LaurensJN.github.io
-Personal Website
+# Personal Website
+My personal website
