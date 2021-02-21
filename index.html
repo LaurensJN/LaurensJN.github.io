@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="skills_style.css">
+	  <script src="script.js"></script>
   </head>
   <body>
 	<div class="main"> 
@@ -10,25 +12,193 @@
 			<img src="content/Photo_Laurens-Oostwegel_Square.jpg" id="personal_photo">
 
 			<h1> LAURENS OOSTWEGEL </h1>
-			Welcome! I'm a researcher at the Slovenian National Building Institute in the Building Physics department. My interests lay in the Built Environment, big and smaller scale. 
-
-			<br> <br>
-	
-			<br> <br>	
-			<div class="jumpto">
-			Jump to: <a href="#current_occupation">current occupation </a> . 
-			<a href="#education">education </a>  . 
-			<a href="#previous_experience">previous experience </a> . 
-			<a href="#other_activities">other activities </a> . 
-			<a href="https://github.com/LaurensJN/">projects </a>
-			</div>
+			Welcome! I'm a researcher at the Slovenian National Building Institute. Here I mainly work with BIM. My interests lay in many aspects of the built environment, of bigger and smaller scale. Over the years I have built experience working with GIS, BIM and various languages such as python and C#.
 		</div>
+
+		<div class="Skills">
+			<div class="SkillsMenu">
+			  <button class="SkillsButton" id="Header">Skills</button>
+			  <button class="SkillsButton" onclick="openSkillsTab(event, 'SoftwareSkills')">Software</button>
+			  <button class="SkillsButton" onclick="openSkillsTab(event, 'ProgrammingSkills')">Programming and Development</button>
+			  <button class="SkillsButton" onclick="openSkillsTab(event, 'OtherSkills')">Other</button>
+		</div>
+		
+		<div class="SkillsContent">
+		  <div id="SoftwareSkills" class="skill"  onmouseover="changeDefOver(event)">
+		  	<!-- QGIS skill -->
+		    <div class="Skill" id="QGIS"> QGIS / GRASS
+		    <div class="Quality">
+		    <div class="circle closed" id="QGIS"> </div> 
+		    <div class="circle open" id="QGIS"> </div>	
+		    <script> multiplyNode(document.querySelector('.closed#QGIS'), 8, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#QGIS'), 2, false); </script>
+		    </div></div>
+
+		  	<!-- Revit skill -->
+		    <div class="Skill" id="Revit"> Revit 
+		     <div class="Quality">
+			    <div class="circle closed" id="Revit"> </div> 
+			    <div class="circle open" id="Revit"> </div>
+			    <script> multiplyNode(document.querySelector('.closed#Revit'), 6, false); </script>
+			    <script> multiplyNode(document.querySelector('.open#Revit'), 4, false); </script>
+		    </div></div>
+		    <!-- Blender skill -->
+		    <div class="Skill" id="Blender"> Blender
+		    <div class="Quality">
+			    <div class="circle closed" id="Blender"> </div> 
+			    <div class="circle open" id="Blender"> </div> 
+			    <script> multiplyNode(document.querySelector('.closed#Blender'), 6, false); </script>
+			    <script> multiplyNode(document.querySelector('.open#Blender'), 4, false); </script>
+			</div></div>
+		    
+		    <!-- CloudCompare skill -->
+		    <div class="Skill" id="CloudCompare"> CloudCompare 
+		    <div class="Quality">
+		    <div class="circle closed" id="CloudCompare"> </div> 
+		    <div class="circle open" id="CloudCompare"> </div>
+		    <script> multiplyNode(document.querySelector('.closed#CloudCompare'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#CloudCompare'), 4, false); </script>
+		    </div></div>
+
+		    <!-- Rhino skill -->
+		    <div class="Skill" id="Rhino"> Rhino / Grasshopper
+		    <div class="Quality">
+		    <div class="circle closed" id="Rhino"> </div> 
+		    <div class="circle open" id="Rhino"> </div>
+		    <script> multiplyNode(document.querySelector('.closed#Rhino'), 5, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#Rhino'), 5, false); </script>
+		    </div></div>
+
+		  </div>
+
+		  <div id="ProgrammingSkills" class="skill" style="display:none"  onmouseover="changeDefOver(event)">
+		    <!-- Python skill -->
+		    <div class="Skill" id="Python"> Python 
+		    <div class="Quality">
+		    	<div class="circle closed" id="Python"> </div> 
+		    	<div class="circle open" id="Python"> </div><br>
+		    	<script> multiplyNode(document.querySelector('.closed#Python'), 8, false); </script>
+		    	<script> multiplyNode(document.querySelector('.open#Python'), 2, false); </script>
+		    </div></div>
+
+		  	<!-- Csharp skill -->
+		    <div class="Skill" id="Csharp"> C#
+		    <div class="Quality">
+		    	<div class="circle closed" id="Csharp"> </div> 
+		    <div class="circle open" id="Csharp"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#Csharp'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#Csharp'), 4, false); </script>
+		    </div></div>
+
+		    <!-- SQL skill -->
+		    <div class="Skill" id="SQL"> SQL
+		    <div class="Quality">
+		    	<div class="circle closed" id="SQL"> </div> 
+		    <div class="circle open" id="SQL"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#SQL'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#SQL'), 4, false); </script>
+		    </div></div>
+
+		     <!-- Julia skill -->
+		    <div class="Skill" id="Julia"> Julia 
+		    <div class="Quality">
+		    <div class="circle closed" id="Julia"> </div> 
+		    <div class="circle open" id="Julia"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#Julia'), 4, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#Julia'), 6, false); </script>
+		    </div></div>
+
+		    <!-- Javascript skill -->
+		    <div class="Skill" id="Javascript"> Javascript 
+		    <div class="Quality">
+		    <div class="circle closed" id="Javascript"> </div> 
+		    <div class="circle open" id="Javascript"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#Javascript'), 4, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#Javascript'), 6, false); </script>
+		    </div></div>
+
+		    <!-- CSS/HTML skill -->
+		    <div class="Skill" id="CSSHTML"> CSS/HTML
+		    <div class="Quality">
+		    	<div class="circle closed" id="CSSHTML"> </div> 
+		    	<div class="circle open" id="CSSHTML"> </div>
+		    	<script> multiplyNode(document.querySelector('.closed#CSSHTML'), 2, false); </script>
+		    	<script> multiplyNode(document.querySelector('.open#CSSHTML'), 8, false); </script>
+	    	</div></div>
+		  </div>
+
+		  <div id="OtherSkills" class="skill" style="display:none"  onmouseover="changeDefOver(event)">
+		    <!-- Geodata -->
+		    <div class="Skill" id="Geodata"> Geodata analysis
+		    <div class="Quality">
+		    	<div class="circle closed" id="Geodata"> </div> 
+		    	<div class="circle open" id="Geodata"> </div><br>
+		    	<script> multiplyNode(document.querySelector('.closed#Geodata'), 8, false); </script>
+		    	<script> multiplyNode(document.querySelector('.open#Geodata'), 2, false); </script>	
+		    </div></div>
+
+		  	<!-- PointClouds skill -->
+		    <div class="Skill" id="PointClouds"> Point cloud analysis
+		    <div class="Quality">
+		    	<div class="circle closed" id="PointClouds"> </div> 
+		    <div class="circle open" id="PointClouds"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#PointClouds'), 8, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#PointClouds'), 2, false); </script>
+		    </div></div>
+
+		    <!-- IFC skill -->
+		    <div class="Skill" id="IFC"> IFC
+		    <div class="Quality">
+		    <div class="circle closed" id="IFC"> </div> 
+		    <div class="circle open" id="IFC"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#IFC'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#IFC'), 4, false); </script>
+		    </div></div>
+
+		    <!-- VersionControl skill -->
+		    <div class="Skill" id="VersionControl"> Version Control (GIT)
+		    <div class="Quality">
+		    	<div class="circle closed" id="VersionControl"> </div> 
+		    	<div class="circle open" id="VersionControl"> </div>
+		    	<script> multiplyNode(document.querySelector('.closed#VersionControl'), 4, false); </script>
+		    	<script> multiplyNode(document.querySelector('.open#VersionControl'), 6, false); </script>
+	    	</div></div>
+		  </div>
+		</div>
+		<div class="SkillsDescription" id="descriptions"></div>
+		</div>
+		<script>	
+		function openSkillsTab(evt, skill) {
+		  var i, x, tablinks;
+		  x = document.getElementsByClassName("skill");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("SkillsButton");
+		  for (i = 0; i < x.length + 1; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", ""); 
+		   }
+		  document.getElementById(skill).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
+		<br>
+		<!-- Jump to places below the page-->
+		<div class="jumpto">
+		Jump to: <a href="#current_occupation">current occupation </a> . 
+		<a href="#education">education </a>  . 
+		<a href="#previous_experience">previous experience </a> . 
+		<a href="#other_activities">other activities </a> . 
+		<a href="https://github.com/LaurensJN/">projects </a>
+		</div>
+
+		<!-- Start of main content -->
 		<div class="Topic" id="current_occupation"><h2> CURRENT OCCUPATION </h2> </div>
 			<div class="Item">
-				<div class="Year"> 2020 - current </div>
+				<div class="Year"> 2020 - now </div>
 				<div class="Content"> 
 				<h3> Researcher at ZAG </h3>
-				Laurens Oostwegel is a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. He graduated from Geomatics for the Built Environment (MSc) at the TU Delft and from Human Geography (MSc) at the University of Utrecht in 2020.		</div>
+				Currently, I am a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. We created an Heritage BIM model of a Slovenian heritage building in Bled. There, we measured environmental parameters and imported these and created a digital twin, to explore how this can be used for healthier environments in heritage buildings. Also, as contribution to interoperability of BIM models, the IFC format has been used for model exchange. As the existing IFC exchange schemas are not sufficient for heritage data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.</div>
 				<div class="Logo">
 					<a href="https://www.zag.si/" target="_blank">
 						<img src="content/logos/zag-logo.png" class="logo">
@@ -124,8 +294,7 @@
 		<div class="Topic" id="other_activities"> <h2> OTHER ACTIVITIES </h2> <br> </div>
 			
 			<div class="Item">
-				<div class="Year"> 2018 - 2019 
-				</div>
+				<div class="Year"> 2018 - 2019 </div>
 				<div class="Content"> 
 				<h3> GEOS Board </h3>
 				GEOS is the study association of Geomatics for the Built Environment. I took care of

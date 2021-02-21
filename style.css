@@ -26,6 +26,8 @@ h2 {
 
 .heading {
 	padding: 20px;
+	padding-left: 30px;
+	width: 100%;
 }
 
 .side { 
@@ -36,19 +38,20 @@ h2 {
 .main { 
 	width: 50%;
 	min-width: 800px;
-	padding: 20px, 0px, 20px, 0px;
+	
 	float: center;
 	background-color: white;
 	box-shadow: 10px 10px 5px #aaaaaa;
 	margin: auto;
 	margin-top: 20px;
+	padding: 50px 0px 20px 0px;
 
 }
 
 .jumpto {
-	padding: 0, 20, 0, 20;
 	text-align: center;
-	margin: 20, 0, 20, 0;
+	/*padding: 0, 20, 40 0;
+	margin: 20 0 20 0;*/
 }
 
 .Introduction {
@@ -59,42 +62,45 @@ h2 {
 }
 
 .Topic {
-	margin-top: 20px;
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 0px;
+	padding-left: 10px;
 	border-top: 1px solid #f3f3f3;
 	float: left;
 	width: 100%;
 }
 
-/*
-.Topic#current_occupation {
-	border-top: 0px;
-}*/
-
-
 .Item {
 	float: left;
 	margin: 0;
+	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-.Content, .Year {
+.Item:hover {
+	 background-color: #fcf7f2;
+}
+
+.Content, .Year, .Logo {
 	float: left;
 	padding-bottom: 10px;
-	padding-right: 10px;
 }
 
 .Content {
-	width: 70%;
-	padding-left: 10px;
+	width: 75%;
+	padding-left: 20px;
+	padding-right: 30px;
 	border-left: 2px solid orange;
 }
 
 .Year{
-	width: 20%;
-	text-align: center;
+	width: 15%;
+	text-align: right;
+	padding-right: 20px;
 	position: relative;
 	top: 50%;
 }
@@ -105,10 +111,6 @@ h2 {
 	top: 50%;
 }
 
-.Item:hover {
-	 background-color: #fcf7f2;
-}
-
 span.clear { 
 	clear: left; 
 	display: block; 
@@ -117,20 +119,26 @@ span.clear {
 
 img.logo {
 	width: 64px;
-	margin: 5px;
+	margin-right: 10px;
 }
 
 #personal_photo {
-	width: 25%;
-	float: right;
+	width: 15%;
+	float: left;
 	border-radius: 50%;
-	margin: 20px;
+	margin: 20px 20px 20px 0px;
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   * {
   	text-align: center;
+  }
+
+  h3 {
+
+  	padding: 0;
   }
   .main {
     width: 100%;
@@ -140,10 +148,20 @@ img.logo {
   .Item {
 	flex-direction: column;	
 	padding-top: 20px;
-	}
+  }
 
+  .Year, .Logo, .Content {
+  	width: 75%;
+  	border-left: 2px solid orange; 
+  	padding-right: 25px;
+  	padding-left: 25px;
+  }
+
+  .Year {
+  	text-align: center;
+  	padding-bottom: 0px;
+  }
   #personal_photo {
 	float: none;
-}
-
+  }
 }
