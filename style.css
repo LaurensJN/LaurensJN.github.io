@@ -23,6 +23,7 @@ h2 {
 	background-color: gray;
 }*/
 
+
 .heading {
 	padding: 20px;
 }
@@ -64,9 +65,10 @@ h2 {
 	width: 100%;
 }
 
+/*
 .Topic#current_occupation {
 	border-top: 0px;
-}
+}*/
 
 
 .Item {
@@ -85,7 +87,7 @@ h2 {
 }
 
 .Content {
-	width: 80%;
+	width: 70%;
 	padding-left: 10px;
 	border-left: 2px solid orange;
 }
@@ -95,7 +97,12 @@ h2 {
 	text-align: center;
 	position: relative;
 	top: 50%;
+}
 
+.Logo {
+	width: 10%;
+	position: relative;
+	top: 50%;
 }
 
 .Item:hover {
@@ -108,6 +115,11 @@ span.clear {
 	padding-bottom: 50px
 	}
 
+img.logo {
+	max-width: 64px;
+	margin: 5px;
+}
+
 #personal_photo {
 	width: 25%;
 	float: right;
@@ -117,10 +129,21 @@ span.clear {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
+  * {
+  	text-align: center;
+  }
   .main {
     width: 100%;
 	min-width: 0px;
 	
   }
+  .Item {
+	flex-direction: column;	
+	padding-top: 20px;
+	}
+
+  #personal_photo {
+	float: none;
 }
 
+}
