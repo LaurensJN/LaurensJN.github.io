@@ -1,18 +1,126 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "Left Main Main Right"
-    "Left Main Main Right"
-    "Left Main Main Right";
+body {
+	background-color: #f3f3f3;
+	font-family: 'Open Sans', sans-serif;
 }
-.Main { grid-area: Main;
-	background-color: #d3d3d3;
+
+* {
+  box-sizing: border-box;
 }
-.Right { grid-area: Right; }
-.Left { grid-area: Left; }
-.h1 {
-text-align: center;
+
+h2, h3 {
+	padding-left: 20px;	
 }
+
+a {
+	color: orange;
+}
+
+/*
+h2 {
+	width: 100%;
+	margin-top: 20px;
+	border-top: 1px solid gray;
+	background-color: gray;
+}*/
+
+.heading {
+	padding: 20px;
+}
+
+.side { 
+	width: 25%;
+	float: left;
+	}
+	
+.main { 
+	width: 50%;
+	min-width: 800px;
+	padding: 20px, 0px, 20px, 0px;
+	float: center;
+	background-color: white;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	margin: auto;
+	margin-top: 20px;
+
+}
+
+.jumpto {
+	padding: 0, 20, 0, 20;
+	text-align: center;
+	margin: 20, 0, 20, 0;
+}
+
+.Introduction {
+}
+
+.IntroductionText {
+	
+}
+
+.Topic {
+	margin-top: 20px;
+	border-top: 1px solid #f3f3f3;
+	float: left;
+	width: 100%;
+}
+
+.Topic#current_occupation {
+	border-top: 0px;
+}
+
+
+.Item {
+	float: left;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.Content, .Year {
+	float: left;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.Content {
+	width: 80%;
+	padding-left: 10px;
+	border-left: 2px solid orange;
+}
+
+.Year{
+	width: 20%;
+	text-align: center;
+	position: relative;
+	top: 50%;
+
+}
+
+.Item:hover {
+	 background-color: #fcf7f2;
+}
+
+span.clear { 
+	clear: left; 
+	display: block; 
+	padding-bottom: 50px
+	}
+
+#personal_photo {
+	width: 25%;
+	float: right;
+	border-radius: 50%;
+	margin: 20px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+	min-width: 0px;
+	
+  }
+}
+
