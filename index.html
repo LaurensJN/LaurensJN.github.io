@@ -30,9 +30,18 @@
 		    <div class="Quality">
 		    <div class="circle closed" id="QGIS"> </div> 
 		    <div class="circle open" id="QGIS"> </div>	
-		    <script> multiplyNode(document.querySelector('.closed#QGIS'), 8, false); </script>
-		    <script> multiplyNode(document.querySelector('.open#QGIS'), 2, false); </script>
+		    <script> multiplyNode(document.querySelector('.closed#QGIS'), 9, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#QGIS'), 1, false); </script>
 		    </div></div>
+			
+		    <!-- Blender skill -->
+		    <div class="Skill" id="Blender"> Blender
+		    <div class="Quality">
+			    <div class="circle closed" id="Blender"> </div> 
+			    <div class="circle open" id="Blender"> </div> 
+			    <script> multiplyNode(document.querySelector('.closed#Blender'), 8, false); </script>
+			    <script> multiplyNode(document.querySelector('.open#Blender'), 2, false); </script>
+			</div></div>
 
 		  	<!-- Revit skill -->
 		    <div class="Skill" id="Revit"> Revit 
@@ -42,14 +51,6 @@
 			    <script> multiplyNode(document.querySelector('.closed#Revit'), 6, false); </script>
 			    <script> multiplyNode(document.querySelector('.open#Revit'), 4, false); </script>
 		    </div></div>
-		    <!-- Blender skill -->
-		    <div class="Skill" id="Blender"> Blender
-		    <div class="Quality">
-			    <div class="circle closed" id="Blender"> </div> 
-			    <div class="circle open" id="Blender"> </div> 
-			    <script> multiplyNode(document.querySelector('.closed#Blender'), 6, false); </script>
-			    <script> multiplyNode(document.querySelector('.open#Blender'), 4, false); </script>
-			</div></div>
 		    
 		    <!-- CloudCompare skill -->
 		    <div class="Skill" id="CloudCompare"> CloudCompare 
@@ -151,8 +152,17 @@
 		    <div class="Quality">
 		    <div class="circle closed" id="IFC"> </div> 
 		    <div class="circle open" id="IFC"> </div><br>
-		    <script> multiplyNode(document.querySelector('.closed#IFC'), 6, false); </script>
-		    <script> multiplyNode(document.querySelector('.open#IFC'), 4, false); </script>
+		    <script> multiplyNode(document.querySelector('.closed#IFC'), 7, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#IFC'), 3, false); </script>
+		    </div></div>
+
+					    <!-- IFC skill -->
+		    <div class="Skill" id="CityModels"> 3D City Models
+		    <div class="Quality">
+		    <div class="circle closed" id="CityModels"> </div> 
+		    <div class="circle open" id="CityModels"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#CityModels'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#CityModels'), 4, false); </script>
 		    </div></div>
 
 		    <!-- VersionControl skill -->
@@ -160,8 +170,8 @@
 		    <div class="Quality">
 		    	<div class="circle closed" id="VersionControl"> </div> 
 		    	<div class="circle open" id="VersionControl"> </div>
-		    	<script> multiplyNode(document.querySelector('.closed#VersionControl'), 4, false); </script>
-		    	<script> multiplyNode(document.querySelector('.open#VersionControl'), 6, false); </script>
+		    	<script> multiplyNode(document.querySelector('.closed#VersionControl'), 8, false); </script>
+		    	<script> multiplyNode(document.querySelector('.open#VersionControl'), 2, false); </script>
 	    	</div></div>
 		  </div>
 		</div>
@@ -197,8 +207,19 @@
 			<div class="Item">
 				<div class="Year"> 2020 - now </div>
 				<div class="Content"> 
-				<h3> Researcher at ZAG </h3>
-				Currently, I am a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. We created an Heritage BIM model of a Slovenian heritage building in Bled. There, we measured environmental parameters and imported these and created a digital twin, to explore how this can be used for healthier environments in heritage buildings. Also, as contribution to interoperability of BIM models, the IFC format has been used for model exchange. As the existing IFC exchange schemas are not sufficient for heritage data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.</div>
+					<h3> Researcher at ZAG </h3>
+					Currently, I am a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. Here I am involved in various projects:
+					<div id='projects'  onmouseover="changeDefOver(event)">
+						<div class='project' id='bimboost'>BIM Boost</div>
+						<div class='project' id='overflow'>oVERFLOw</div>
+						<div class='project' id='sensorvision'>Sensor Vision</div>
+					</div>
+					<div id='projectdescription'></div>
+					<script> 
+						document.getElementById("projectdescription").innerHTML = descriptions["bimboost"];
+						document.getElementById("bimboost").style.textDecoration = 'underline orange 1px'
+					</script>
+				</div>
 				<div class="Logo">
 					<a href="https://www.zag.si/" target="_blank">
 						<img src="content/logos/zag-logo.png" class="logo">
@@ -292,7 +313,18 @@
 				</div>
 			</div>
 		<div class="Topic" id="other_activities"> <h2> OTHER ACTIVITIES </h2> <br> </div>
-			
+			<div class="Item">
+				<div class="Year"> 2021 - now </div>
+				<div class="Content"> 
+				<h3> IfcOpenShell developer </h3>
+				IfcOpenShell is an open source (LGPL) software library for working with the Industry Foundation Classes (IFC) file format. 
+				I am responsible for ifccityjson, that is able to convert files in the CityJSON schema to valid IFC files.</div>
+				<div class="Logo">
+					<a href="https://www.geostudelft.nl/" target="_blank">
+						<img src="content/logos/ifcopenshell-logo.png" class="logo">
+					</a>
+				</div>
+			</div>
 			<div class="Item">
 				<div class="Year"> 2018 - 2019 </div>
 				<div class="Content"> 
@@ -303,8 +335,9 @@
 				<div class="Logo">
 					<a href="https://www.geostudelft.nl/" target="_blank">
 						<img src="content/logos/geos-logo.png" class="logo">
-					</a></div>
+					</a>
 				</div>
+			</div>
 			<div class="Item">
 				<div class="Year"> 2018 </div>
 				<div class="Content"> 

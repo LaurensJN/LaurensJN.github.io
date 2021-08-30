@@ -24,15 +24,40 @@ var descriptions = {
 	this website.",
 	"Geodata" : "",
 	"PointClouds" : "",
-	"IFC" : "IFC is a colossal schema that takes time to get acquainted with.. We are currently in the process of making an \
-	MVD for the Heritage BIM field with IfcDoc, see also my github page.",
-	"VersionControl" : ""
+	"IFC" : "Current developer of IfcOpenShell, an open source library to modify and view IFC models. See <a href='https://www.github.com/IfcOpenShell/IfcOpenShell'>IfcOpenShell</a>",
+	"CityModels": "3D city models such as CityJSON and CityGML. I am also the author of the ifccityjson converter in the IfcOpenShell \
+	library that allows for conversion from CityJSON - IFC. See <a href='https://www.github.com/IfcOpenShell/IfcOpenShell'>IfcOpenShell</a>",
+	"VersionControl" : "",
+	"overflow": "Vulnerability assessment of embankments and bridges exposed to flooding hazards. The overall objective of the oVERFLOw project \
+	is strengthening resilience to climate change impacts with the specific objective being the development of climate-resilient infrastructure. \
+	I'm working on the spatial / GIS part of the analysis in this project.",
+	"bimboost": "We created a Historic BIM model of a Slovenian heritage building in Bled. There, we measured environmental parameters \
+	and imported these and created a digital twin, to explore how this can be used for healthier environments in heritage buildings. Also, as contribution\
+	to interoperability of BIM models, the IFC format has been used for model exchange. As the existing IFC exchange schemas are not sufficient for heritage\
+	data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.",
+	"sensorvision": "Making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
+	Stereo-PTAM algorithm, a SLAM algorithm for stereocameras. We will validate our results using LIDAR & make some suggestions when and how to use such a setup, \
+	based on our results.",
 }
 
 function changeDefOver(e) {
   if (e.target.id in descriptions) {
-  	document.getElementById("descriptions").innerHTML = descriptions[e.target.id];
+	if (e.target.className == "project") {
+		document.getElementById("projectdescription").innerHTML = descriptions[e.target.id];
+		var projects = document.getElementsByClassName('project');
+		for (var i = 0; i < projects.length; i++) {
+		  projects[i].style.textDecoration = 'underline black 1px';
+		}
+		e.target.style.textDecoration = 'underline orange 1px'
+	}
+	else document.getElementById("descriptions").innerHTML = descriptions[e.target.id];
   }
+  //e.target.classList.toggle('opacity-toggle');
+}
 
+function changeDefOverProj(e) {
+  if (e.target.id in descriptions) {
+  	document.getElementById("projectdescription").innerHTML = descriptions[e.target.id];
+  }
   //e.target.classList.toggle('opacity-toggle');
 }

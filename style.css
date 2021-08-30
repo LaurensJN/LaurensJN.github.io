@@ -23,6 +23,19 @@ h2 {
 	background-color: gray;
 }*/
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding-left: 1.3em;
+}
+
+li:before {
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
 
 .heading {
 	padding: 20px;
@@ -122,6 +135,10 @@ img.logo {
 	margin-right: 10px;
 }
 
+#projectdescription {
+	min-height: 150px;
+}
+
 #personal_photo {
 	width: 15%;
 	float: left;
@@ -129,6 +146,20 @@ img.logo {
 	margin: 20px 20px 20px 0px;
 
 }
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  padding-top: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project {
+	text-decoration: underline 1px;
+}
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
