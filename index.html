@@ -21,6 +21,7 @@
 			  <button class="SkillsButton" onclick="openSkillsTab(event, 'SoftwareSkills')">Software</button>
 			  <button class="SkillsButton" onclick="openSkillsTab(event, 'ProgrammingSkills')">Programming and Development</button>
 			  <button class="SkillsButton" onclick="openSkillsTab(event, 'OtherSkills')">Other</button>
+			  <button class="SkillsButton" onclick="openSkillsTab(event, 'Languages')">Languages</button>
 		</div>
 		
 		<div class="SkillsContent">
@@ -156,7 +157,7 @@
 		    <script> multiplyNode(document.querySelector('.open#IFC'), 3, false); </script>
 		    </div></div>
 
-					    <!-- IFC skill -->
+			<!-- 3D City Models skill -->
 		    <div class="Skill" id="CityModels"> 3D City Models
 		    <div class="Quality">
 		    <div class="circle closed" id="CityModels"> </div> 
@@ -173,6 +174,42 @@
 		    	<script> multiplyNode(document.querySelector('.closed#VersionControl'), 8, false); </script>
 		    	<script> multiplyNode(document.querySelector('.open#VersionControl'), 2, false); </script>
 	    	</div></div>
+		  </div>
+		  <div id="Languages" class="skill" style="display:none"  onmouseover="changeDefOver(event)">
+		    <!-- Dutch -->
+		    <div class="Skill" id="Dutch"> Dutch
+		    <div class="Quality">
+		    	<div class="circle closed" id="Dutch"> </div> 
+		    	<!--<div class="circle open" id="Dutch"> </div><br>-->
+		    	<script> multiplyNode(document.querySelector('.closed#Dutch'), 10, false); </script>
+		    </div></div>
+
+		  	<!-- English -->
+		    <div class="Skill" id="English"> English
+		    <div class="Quality">
+		    	<div class="circle closed" id="English"> </div> 
+		    <div class="circle open" id="English"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#English'), 9, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#English'), 1, false); </script>
+		    </div></div>
+
+		    <!-- German -->
+		    <div class="Skill" id="German"> German
+		    <div class="Quality">
+		    <div class="circle closed" id="German"> </div> 
+		    <div class="circle open" id="German"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#German'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#German'), 4, false); </script>
+		    </div></div>
+
+			<!-- Slovene -->
+		    <div class="Skill" id="Slovene"> Slovene
+		    <div class="Quality">
+		    <div class="circle closed" id="Slovene"> </div> 
+		    <div class="circle open" id="Slovene"> </div><br>
+		    <script> multiplyNode(document.querySelector('.closed#Slovene'), 3, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#Slovene'), 7, false); </script>
+		    </div></div>
 		  </div>
 		</div>
 		<div class="SkillsDescription" id="descriptions"></div>

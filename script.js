@@ -14,7 +14,7 @@ var descriptions = {
 	"CloudCompare" : "As in my work and studies I often have and had to deal with point clouds, CloudCompare is no unfamiliar program to me. ",
 	"Rhino" : "Rhino+Grasshoper is an ideal combination for complex spatial analysis and visualisation. Therefore I used it not only during my \
 	BSc. Architecture, but also extensively during my MSc. Geomatics for the Built Environment.",
-	"Python" : "",
+	"Python" : "My daily work involves a lot of python programming. The project Sensor Vision (see section current occuptation) is mostly done with python.",
 	"Csharp" : "I used C# together with Unity for my thesis of Geomatics for the Built Environment. In my thesis I used the Microsoft Hololens \
 	for indoor positioning, in the case of an emergency.",
 	"Julia" : "",
@@ -38,6 +38,10 @@ var descriptions = {
 	"sensorvision": "Making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
 	Stereo-PTAM algorithm, a SLAM algorithm for stereocameras. We will validate our results using LIDAR & make some suggestions when and how to use such a setup, \
 	based on our results.",
+	"Dutch": "Dutch is my native language.",
+	"English": "I did multiple academic degrees in English and my daily work is entirely in English.",
+	"German": "My highest level of German education is B1.1. Next to that I did multiple courses at the TU Munich in German.",
+	"Slovene": "My highest level of Slovene education is the intermediate course Slovene at the faculty of Ljubljana.",
 }
 
 function changeDefOver(e) {
