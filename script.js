@@ -35,7 +35,7 @@ var descriptions = {
 	and imported these and created a digital twin, to explore how this can be used for healthier environments in heritage buildings. Also, as contribution\
 	to interoperability of BIM models, the IFC format has been used for model exchange. As the existing IFC exchange schemas are not sufficient for heritage\
 	data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.",
-	"sensorvision": "Making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
+	"sensorvision": "We are making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
 	Stereo-PTAM algorithm, a SLAM algorithm for stereocameras. We will validate our results using LIDAR & make some suggestions when and how to use such a setup, \
 	based on our results.",
 	"Dutch": "Dutch is my native language.",
