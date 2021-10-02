@@ -28,7 +28,7 @@ var descriptions = {
 	"CityModels": "3D city models such as CityJSON and CityGML. I am also the author of the ifccityjson converter in the IfcOpenShell \
 	library that allows for conversion from CityJSON - IFC. See <a href='https://www.github.com/IfcOpenShell/IfcOpenShell'>IfcOpenShell</a>",
 	"VersionControl" : "",
-	"overflow": "Vulnerability assessment of embankments and bridges exposed to flooding hazards. The overall objective of the oVERFLOw project \
+	"overflow": "We are doing a vulnerability assessment of embankments and bridges exposed to flooding hazards. The overall objective of the oVERFLOw project \
 	is strengthening resilience to climate change impacts with the specific objective being the development of climate-resilient infrastructure. \
 	I'm working on the spatial / GIS part of the analysis in this project.",
 	"bimboost": "We created a Historic BIM model of a Slovenian heritage building in Bled. There, we measured environmental parameters \
