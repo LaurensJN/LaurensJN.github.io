@@ -37,7 +37,7 @@ var descriptions = {
 	data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.",
 	"sensorvision": "We are making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
 	Stereo-PTAM algorithm, a SLAM algorithm for stereocameras. We will validate our results using LIDAR & make some suggestions when and how to use such a setup, \
-	based on our results. See current progress at in our <a href='https://github.com/ZAGsi/blender_stereo_ptam'>github repo</a>",
+	based on our results. Follow the current progress via our github repository <a href='https://github.com/ZAGsi/blender_stereo_ptam'>ZAGsi/blender_stereo_ptam</a>.".,
 	"Dutch": "Dutch is my native language.",
 	"English": "I did multiple academic degrees in English and my daily work is entirely in English.",
 	"German": "My highest level of German education is B1.1. Next to that I did multiple courses at the TU Munich in German.",
