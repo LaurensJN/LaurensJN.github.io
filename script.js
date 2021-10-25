@@ -28,16 +28,16 @@ var descriptions = {
 	"CityModels": "3D city models such as CityJSON and CityGML. I am also the author of the ifccityjson converter in the IfcOpenShell \
 	library that allows for conversion from CityJSON - IFC. See <a href='https://www.github.com/IfcOpenShell/IfcOpenShell'>IfcOpenShell</a>",
 	"VersionControl" : "",
-	"overflow": "Vulnerability assessment of embankments and bridges exposed to flooding hazards. The overall objective of the oVERFLOw project \
+	"overflow": "We are doing a vulnerability assessment of embankments and bridges exposed to flooding hazards. The overall objective of the oVERFLOw project \
 	is strengthening resilience to climate change impacts with the specific objective being the development of climate-resilient infrastructure. \
 	I'm working on the spatial / GIS part of the analysis in this project.",
 	"bimboost": "We created a Historic BIM model of a Slovenian heritage building in Bled. There, we measured environmental parameters \
 	and imported these and created a digital twin, to explore how this can be used for healthier environments in heritage buildings. Also, as contribution\
 	to interoperability of BIM models, the IFC format has been used for model exchange. As the existing IFC exchange schemas are not sufficient for heritage\
 	data exchange, we are in the process of developing a Model View Definition (MVD) that can be used as exchange schema for a conservation / restoration plan.",
-	"sensorvision": "Making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
+	"sensorvision": "We are making a low-cost SLAM system using Raspberry Pi cameras and an IMU. We will measure the accuracy of point clouds produced by the RPi's and the \
 	Stereo-PTAM algorithm, a SLAM algorithm for stereocameras. We will validate our results using LIDAR & make some suggestions when and how to use such a setup, \
-	based on our results.",
+	based on our results. Follow the current progress via our github repository <a href='https://github.com/ZAGsi/blender_stereo_ptam'>ZAGsi/blender_stereo_ptam</a>.",
 	"Dutch": "Dutch is my native language.",
 	"English": "I did multiple academic degrees in English and my daily work is entirely in English.",
 	"German": "My highest level of German education is B1.1. Next to that I did multiple courses at the TU Munich in German.",
