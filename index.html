@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <meta name="description" content="Hi! I'm a researcher at the Slovenian National Building Institute. Here I work as a BIM researcher. My interests lay in many aspects of the built environment, of bigger and smaller scale. Over the years I have built experience working with GIS, BIM and various languages such as python and C#." />
+	  <meta name="description" content="Hi! I'm a researcher at the Slovenian National Building Institute. Here I work as a BIM researcher. My interests lay within the field of geodata and in many aspects of the built environment, of bigger and smaller scale. Over the years I have built experience working with GIS, BIM and various languages such as python and C#." />
 	  <meta name="keywords" content="Laurens Oostwegel, Laurens Jozef Nicolaas Oostwegel, Laurens, Oostwegel, Geomatics, SLAM, BIM, GIS, point clouds, Berlin, python, opencv, github" />
 	  <meta name="robots" content="index, follow" />
 	  <link rel="stylesheet" href="style.css">
@@ -10,13 +10,13 @@
 	  <title>Laurens Oostwegel</title>
   </head>
   <body>
-	<div class="main"> 
+	<div class="main">
 
 		<div class="heading">
 			<img src="content/Photo_Laurens-Oostwegel_Square.jpg" id="personal_photo" alt="Laurens Oostwegel" title="Laurens Oostwegel">
 
 			<h1> LAURENS OOSTWEGEL </h1>
-			Welcome! I'm a researcher at the Slovenian National Building Institute. Here I mainly work with BIM. My interests lay in many aspects of the built environment, of bigger and smaller scale. Over the years I have built experience working with GIS, BIM and various languages such as python and C#.
+			Hi! I'm a researcher at the Slovenian National Building Institute. Here I work as a BIM researcher. My interests lay within the field of geodata and in many aspects of the built environment, of bigger and smaller scale. Over the years I have built experience working with GIS, BIM and various languages such as python and C#
 		</div>
 
 		<div class="Skills">
@@ -27,49 +27,58 @@
 			  <button class="SkillsButton" onclick="openSkillsTab(event, 'OtherSkills')">Other</button>
 			  <button class="SkillsButton" onclick="openSkillsTab(event, 'Languages')">Languages</button>
 		</div>
-		
+
 		<div class="SkillsContent">
 		  <div id="SoftwareSkills" class="skill"  onmouseover="changeDefOver(event)">
 		  	<!-- QGIS skill -->
 		    <div class="Skill" id="QGIS"> QGIS / GRASS
 		    <div class="Quality">
-		    <div class="circle closed" id="QGIS"> </div> 
-		    <div class="circle open" id="QGIS"> </div>	
+		    <div class="circle closed" id="QGIS"> </div>
+		    <div class="circle open" id="QGIS"> </div>
 		    <script> multiplyNode(document.querySelector('.closed#QGIS'), 9, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#QGIS'), 1, false); </script>
 		    </div></div>
-			
+
 		    <!-- Blender skill -->
 		    <div class="Skill" id="Blender"> Blender
 		    <div class="Quality">
-			    <div class="circle closed" id="Blender"> </div> 
-			    <div class="circle open" id="Blender"> </div> 
+			    <div class="circle closed" id="Blender"> </div>
+			    <div class="circle open" id="Blender"> </div>
 			    <script> multiplyNode(document.querySelector('.closed#Blender'), 8, false); </script>
 			    <script> multiplyNode(document.querySelector('.open#Blender'), 2, false); </script>
 			</div></div>
 
 		  	<!-- Revit skill -->
-		    <div class="Skill" id="Revit"> Revit 
+		    <div class="Skill" id="Revit"> Revit
 		     <div class="Quality">
-			    <div class="circle closed" id="Revit"> </div> 
+			    <div class="circle closed" id="Revit"> </div>
 			    <div class="circle open" id="Revit"> </div>
 			    <script> multiplyNode(document.querySelector('.closed#Revit'), 6, false); </script>
 			    <script> multiplyNode(document.querySelector('.open#Revit'), 4, false); </script>
 		    </div></div>
-		    
+
 		    <!-- CloudCompare skill -->
-		    <div class="Skill" id="CloudCompare"> CloudCompare 
+		    <div class="Skill" id="CloudCompare"> CloudCompare
 		    <div class="Quality">
-		    <div class="circle closed" id="CloudCompare"> </div> 
+		    <div class="circle closed" id="CloudCompare"> </div>
 		    <div class="circle open" id="CloudCompare"> </div>
 		    <script> multiplyNode(document.querySelector('.closed#CloudCompare'), 6, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#CloudCompare'), 4, false); </script>
 		    </div></div>
 
+		    <!-- FME skill -->
+		    <div class="Skill" id="FME"> FME
+		    <div class="Quality">
+		    <div class="circle closed" id="FME"> </div>
+		    <div class="circle open" id="FME"> </div>
+		    <script> multiplyNode(document.querySelector('.closed#FME'), 6, false); </script>
+		    <script> multiplyNode(document.querySelector('.open#FME'), 4, false); </script>
+		    </div></div>
+
 		    <!-- Rhino skill -->
 		    <div class="Skill" id="Rhino"> Rhino / Grasshopper
 		    <div class="Quality">
-		    <div class="circle closed" id="Rhino"> </div> 
+		    <div class="circle closed" id="Rhino"> </div>
 		    <div class="circle open" id="Rhino"> </div>
 		    <script> multiplyNode(document.querySelector('.closed#Rhino'), 5, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#Rhino'), 5, false); </script>
@@ -79,9 +88,9 @@
 
 		  <div id="ProgrammingSkills" class="skill" style="display:none"  onmouseover="changeDefOver(event)">
 		    <!-- Python skill -->
-		    <div class="Skill" id="Python"> Python 
+		    <div class="Skill" id="Python"> Python
 		    <div class="Quality">
-		    	<div class="circle closed" id="Python"> </div> 
+		    	<div class="circle closed" id="Python"> </div>
 		    	<div class="circle open" id="Python"> </div><br>
 		    	<script> multiplyNode(document.querySelector('.closed#Python'), 8, false); </script>
 		    	<script> multiplyNode(document.querySelector('.open#Python'), 2, false); </script>
@@ -90,7 +99,7 @@
 		  	<!-- Csharp skill -->
 		    <div class="Skill" id="Csharp"> C#
 		    <div class="Quality">
-		    	<div class="circle closed" id="Csharp"> </div> 
+		    	<div class="circle closed" id="Csharp"> </div>
 		    <div class="circle open" id="Csharp"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#Csharp'), 6, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#Csharp'), 4, false); </script>
@@ -99,25 +108,25 @@
 		    <!-- SQL skill -->
 		    <div class="Skill" id="SQL"> SQL
 		    <div class="Quality">
-		    	<div class="circle closed" id="SQL"> </div> 
+		    	<div class="circle closed" id="SQL"> </div>
 		    <div class="circle open" id="SQL"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#SQL'), 6, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#SQL'), 4, false); </script>
 		    </div></div>
 
 		     <!-- Julia skill -->
-		    <div class="Skill" id="Julia"> Julia 
+		    <div class="Skill" id="Julia"> Julia
 		    <div class="Quality">
-		    <div class="circle closed" id="Julia"> </div> 
+		    <div class="circle closed" id="Julia"> </div>
 		    <div class="circle open" id="Julia"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#Julia'), 4, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#Julia'), 6, false); </script>
 		    </div></div>
 
 		    <!-- Javascript skill -->
-		    <div class="Skill" id="Javascript"> Javascript 
+		    <div class="Skill" id="Javascript"> Javascript
 		    <div class="Quality">
-		    <div class="circle closed" id="Javascript"> </div> 
+		    <div class="circle closed" id="Javascript"> </div>
 		    <div class="circle open" id="Javascript"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#Javascript'), 4, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#Javascript'), 6, false); </script>
@@ -126,7 +135,7 @@
 		    <!-- CSS/HTML skill -->
 		    <div class="Skill" id="CSSHTML"> CSS/HTML
 		    <div class="Quality">
-		    	<div class="circle closed" id="CSSHTML"> </div> 
+		    	<div class="circle closed" id="CSSHTML"> </div>
 		    	<div class="circle open" id="CSSHTML"> </div>
 		    	<script> multiplyNode(document.querySelector('.closed#CSSHTML'), 2, false); </script>
 		    	<script> multiplyNode(document.querySelector('.open#CSSHTML'), 8, false); </script>
@@ -135,18 +144,18 @@
 
 		  <div id="OtherSkills" class="skill" style="display:none"  onmouseover="changeDefOver(event)">
 		    <!-- Geodata -->
-		    <div class="Skill" id="Geodata"> Geodata analysis
+		    <div class="Skill" id="Geodata"> Geospatial data analysis
 		    <div class="Quality">
-		    	<div class="circle closed" id="Geodata"> </div> 
+		    	<div class="circle closed" id="Geodata"> </div>
 		    	<div class="circle open" id="Geodata"> </div><br>
 		    	<script> multiplyNode(document.querySelector('.closed#Geodata'), 8, false); </script>
-		    	<script> multiplyNode(document.querySelector('.open#Geodata'), 2, false); </script>	
+		    	<script> multiplyNode(document.querySelector('.open#Geodata'), 2, false); </script>
 		    </div></div>
 
 		  	<!-- PointClouds skill -->
 		    <div class="Skill" id="PointClouds"> Point cloud analysis
 		    <div class="Quality">
-		    	<div class="circle closed" id="PointClouds"> </div> 
+		    	<div class="circle closed" id="PointClouds"> </div>
 		    <div class="circle open" id="PointClouds"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#PointClouds'), 8, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#PointClouds'), 2, false); </script>
@@ -155,7 +164,7 @@
 		    <!-- IFC skill -->
 		    <div class="Skill" id="IFC"> IFC
 		    <div class="Quality">
-		    <div class="circle closed" id="IFC"> </div> 
+		    <div class="circle closed" id="IFC"> </div>
 		    <div class="circle open" id="IFC"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#IFC'), 7, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#IFC'), 3, false); </script>
@@ -164,7 +173,7 @@
 			<!-- 3D City Models skill -->
 		    <div class="Skill" id="CityModels"> 3D City Models
 		    <div class="Quality">
-		    <div class="circle closed" id="CityModels"> </div> 
+		    <div class="circle closed" id="CityModels"> </div>
 		    <div class="circle open" id="CityModels"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#CityModels'), 6, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#CityModels'), 4, false); </script>
@@ -173,7 +182,7 @@
 		    <!-- VersionControl skill -->
 		    <div class="Skill" id="VersionControl"> Version Control (GIT)
 		    <div class="Quality">
-		    	<div class="circle closed" id="VersionControl"> </div> 
+		    	<div class="circle closed" id="VersionControl"> </div>
 		    	<div class="circle open" id="VersionControl"> </div>
 		    	<script> multiplyNode(document.querySelector('.closed#VersionControl'), 8, false); </script>
 		    	<script> multiplyNode(document.querySelector('.open#VersionControl'), 2, false); </script>
@@ -183,7 +192,7 @@
 		    <!-- Dutch -->
 		    <div class="Skill" id="Dutch"> Dutch
 		    <div class="Quality">
-		    	<div class="circle closed" id="Dutch"> </div> 
+		    	<div class="circle closed" id="Dutch"> </div>
 		    	<!--<div class="circle open" id="Dutch"> </div><br>-->
 		    	<script> multiplyNode(document.querySelector('.closed#Dutch'), 10, false); </script>
 		    </div></div>
@@ -191,7 +200,7 @@
 		  	<!-- English -->
 		    <div class="Skill" id="English"> English
 		    <div class="Quality">
-		    	<div class="circle closed" id="English"> </div> 
+		    	<div class="circle closed" id="English"> </div>
 		    <div class="circle open" id="English"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#English'), 9, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#English'), 1, false); </script>
@@ -200,7 +209,7 @@
 		    <!-- German -->
 		    <div class="Skill" id="German"> German
 		    <div class="Quality">
-		    <div class="circle closed" id="German"> </div> 
+		    <div class="circle closed" id="German"> </div>
 		    <div class="circle open" id="German"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#German'), 6, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#German'), 4, false); </script>
@@ -209,7 +218,7 @@
 			<!-- Slovene -->
 		    <div class="Skill" id="Slovene"> Slovene
 		    <div class="Quality">
-		    <div class="circle closed" id="Slovene"> </div> 
+		    <div class="circle closed" id="Slovene"> </div>
 		    <div class="circle open" id="Slovene"> </div><br>
 		    <script> multiplyNode(document.querySelector('.closed#Slovene'), 3, false); </script>
 		    <script> multiplyNode(document.querySelector('.open#Slovene'), 7, false); </script>
@@ -218,7 +227,7 @@
 		</div>
 		<div class="SkillsDescription" id="descriptions"></div>
 		</div>
-		<script>	
+		<script>
 		function openSkillsTab(evt, skill) {
 		  var i, x, tablinks;
 		  x = document.getElementsByClassName("skill");
@@ -227,7 +236,7 @@
 		  }
 		  tablinks = document.getElementsByClassName("SkillsButton");
 		  for (i = 0; i < x.length + 1; i++) {
-		    tablinks[i].className = tablinks[i].className.replace(" active", ""); 
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
 		   }
 		  document.getElementById(skill).style.display = "block";
 		  evt.currentTarget.className += " active";
@@ -236,10 +245,10 @@
 		<br>
 		<!-- Jump to places below the page-->
 		<div class="jumpto">
-		Jump to: <a href="#current_occupation">current occupation </a> . 
-		<a href="#education">education </a>  . 
-		<a href="#previous_experience">previous experience </a> . 
-		<a href="#other_activities">other activities </a> . 
+		Jump to: <a href="#current_occupation">current occupation </a> .
+		<a href="#education">education </a>  .
+		<a href="#previous_experience">previous experience </a> .
+		<a href="#other_activities">other activities </a> .
 		<a href="https://github.com/LaurensJN/">projects </a>
 		</div>
 
@@ -247,16 +256,16 @@
 		<div class="Topic" id="current_occupation"><h2> CURRENT OCCUPATION </h2> </div>
 			<div class="Item">
 				<div class="Year"> 2020 - now </div>
-				<div class="Content"> 
+				<div class="Content">
 					<h3> Researcher at ZAG </h3>
-					Currently, I am a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. Here I am involved in various projects:
+					Currently, I am a researcher at the Slovenian National Building Institute (ZAG) in the Building Physics department. Here I work with:
 					<div id='projects'  onmouseover="changeDefOver(event)">
-						<div class='project' id='bimboost'>BIM Boost</div>
-						<div class='project' id='overflow'>oVERFLOw</div>
-						<div class='project' id='sensorvision'>Sensor Vision</div>
+						<div class='project' id='overflow'>GIS</div>
+						<div class='project' id='bimboost'>BIM</div>
+						<div class='project' id='sensorvision'>Image understanding / point clouds</div>
 					</div>
 					<div id='projectdescription'></div>
-					<script> 
+					<script>
 						document.getElementById("projectdescription").innerHTML = descriptions["bimboost"];
 						document.getElementById("bimboost").style.textDecoration = 'underline orange 1px'
 					</script>
@@ -264,14 +273,14 @@
 				<div class="Logo">
 					<a href="https://www.zag.si/" target="_blank">
 						<img src="content/logos/zag-logo.png" class="logo">
-					</a>	
+					</a>
 				</div>
 			</div>
-		
+
 		<div class="Topic" id="education"> <h2> EDUCATION </h2></div> <br>
 			<div class="Item">
 				<div class="Year"> 2016 - 2020 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Geomatics for the Built Environment (MSc) </h3>
 				TU Delft (NL) - Geomatics is concerned with the acquisition, analysis, management
 				and visualisation of geographic data with the aim of gaining knowledge and a
@@ -282,10 +291,10 @@
 					</a>
 				</div>
 			</div>
-			
+
 			<div class="Item">
 				<div class="Year"> 2017 - 2019 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Urban Geography (MSc) </h3>
 				Utrecht University (NL) - The world is urbanizing. Cities are geographies of opposites.
 				This master teaches you to observe the social world: nuanced, complex as it is. It
@@ -296,10 +305,10 @@
 					</a>
 				</div>
 			</div>
-			
+
 			<div class="Item">
 				<div class="Year"> 2013 - 2016 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Architecture, Urbanism and Building Sciences (BSc) </h3>
 				TU Delft (NL) - A broad bachelor, learning the technical, design and social aspects
 				of architecture and urbanism. Electives in: Urban Geography.	</div>
@@ -309,13 +318,13 @@
 					</a>
 				</div>
 			</div>
-		
 
-		
+
+
 		<div class="Topic" id="previous_experience"> <h2> PREVIOUS EXPERIENCES </h2> <br></div>
 			<div class="Item">
 				<div class="Year"> 2019 - 2020 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Thesis internship at CGI (NL) </h3>
 					In this thesis internship I researched the possibility of indoor positioning
 					in the case of Emergency Response using the Microsoft Hololens. I used three
@@ -328,7 +337,7 @@
 			</div>
 			<div class="Item">
 				<div class="Year"> 2019 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Thesis internship at IPOP (SL) </h3>
 					Thesis internship at the Institute for Spatial Policies in Ljubljana where
 					I researched the effect of green space in the city on the social networks of
@@ -339,10 +348,10 @@
 					</a>
 				</div>
 			</div>
-			
+
 			<div class="Item">
 				<div class="Year"> 2017 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Internship at Deltares (NL) </h3>
 					Deltares (NL) - Internship concerning point cloud analysis and database
 					management. Learned valuable skills in working in a team with multiple
@@ -356,9 +365,9 @@
 		<div class="Topic" id="other_activities"> <h2> OTHER ACTIVITIES </h2> <br> </div>
 			<div class="Item">
 				<div class="Year"> 2021 - now </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> IfcOpenShell developer </h3>
-				IfcOpenShell is an open source (LGPL) software library for working with the Industry Foundation Classes (IFC) file format. 
+				IfcOpenShell is an open source (LGPL) software library for working with the Industry Foundation Classes (IFC) file format.
 				I am responsible for ifccityjson, that is able to convert files in the CityJSON schema to valid IFC files.</div>
 				<div class="Logo">
 					<a href="https://www.github.com/IfcOpenShell/IfcOpenShell" target="_blank">
@@ -368,7 +377,7 @@
 			</div>
 			<div class="Item">
 				<div class="Year"> 2018 - 2019 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> GEOS Board </h3>
 				GEOS is the study association of Geomatics for the Built Environment. I took care of
 				the events and the external affairs. We organised various study-related activities and
@@ -381,7 +390,7 @@
 			</div>
 			<div class="Item">
 				<div class="Year"> 2018 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Study abroad at the TU Munich </h3>
 				For my Geomatics electives I went abroad to the TU Munich. Here I
 				studied at the faculty of Geodesy. In one semester I studied
@@ -394,7 +403,7 @@
 				</div>
 			<div class="Item">
 				<div class="Year"> 2016 - 2017 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Festival Aangeschoten Wild </h3>
 				Festival Aangeschoten Wild is a music and cultural festival in Delft. Here I took the role of cultural booker, where I composed a variety of cultural acts, ranging from theatre, to expositions and graffiti artists.	</div>
 				<div class="Logo">
@@ -404,7 +413,7 @@
 			</div>
 			<div class="Item">
 				<div class="Year"> 2016 - 2017 </div>
-				<div class="Content"> 
+				<div class="Content">
 				<h3> Abracadabaret Board </h3>
 				Abracadabaret is the theatre group I have been part of as a student. Not only did I take part in organising improvisation meetups and participate <ins></ins> multiple theatre plays, I also was responsible for the general organisation. Here I presented the role of the treasurer.  </div>
 				<div class="Logo">  </div>
