@@ -32,15 +32,15 @@ var descriptions = {
 	"CityModels": "3D city models such as CityJSON and CityGML. I am also the author of the ifccityjson converter in the IfcOpenShell \
 	library that allows for conversion from CityJSON - IFC. See <a href='https://www.github.com/IfcOpenShell/IfcOpenShell'>IfcOpenShell</a>",
 	"VersionControl" : "I use github for all open source projects I am currently working on.",
-	"overflow": "- GIS data analysis and processing for vulnerability maps. <br> \
+	"zaggis": "- GIS data analysis and processing for vulnerability maps. <br> \
                - Maintaining WMS / WFS QGIS server. <br> \
                - Creator of the <a href='https://github.com/ZAGsi/video2geoimg'>ZAGsi/video2geoimg</a> repository.",
-	"bimboost": "- IFC manipulation using IfcOpenShell and BlenderBIM. <br>\
+	"zagbim": "- IFC manipulation using IfcOpenShell and BlenderBIM. <br>\
                - Digital twins with real-time sensor data. <br>\
                - Heritage BIM for conservation.",
-	"sensorvision": "- Using the Raspberri Pi camera module. <br> \
+	"zagstereo": "- Using the Raspberri Pi camera module. <br> \
                    - OpenCV for image understanding. <br> \
-                   - Low-cost SLAM system in blender. See our github repository <a href='https://github.com/ZAGsi/BlenderSLAM'>ZAGsi/BlenderSLAM</a>.,
+                   - Low-cost SLAM system in blender. See our github repository <a href='https://github.com/ZAGsi/BlenderSLAM'>ZAGsi/BlenderSLAM</a>.",
 	"Dutch": "Dutch is my native language.",
 	"English": "I finished multiple academic degrees in English and I use English for my daily work.",
 	"German": "I finished multiple courses at the TU Munich in German. Currently I am taking more German lessons.",
