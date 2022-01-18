@@ -124,6 +124,12 @@ li:before {
 	top: 50%;
 }
 
+.Publications {
+	font-size: 10pt;
+	text-indent: 30px;
+	color: gray;
+}
+
 span.clear {
 	clear: left;
 	display: block;
