@@ -44,7 +44,7 @@ var descriptions = {
 	"Dutch": "Dutch is my native language.",
 	"English": "I finished multiple academic degrees in English and I use it for my daily work.",
 	"German": "I finished multiple courses given in the German language when I studied at the TU Munich. I recently gave a presentation at a German geospatial conference.",
-	"Slovene": "I finished a B1 Slovene course at the faculty of Arts in Ljubljana. I have worked in Slovenia for almost 2 years.",
+	"Slovene": "I finished a B1 Slovene course at the Faculty of Arts in Ljubljana. I have worked in Slovenia for almost 2 years.",
 }
 
 function changeDefOver(e) {
