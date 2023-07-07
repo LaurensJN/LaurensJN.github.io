@@ -42,9 +42,9 @@ var descriptions = {
                    - OpenCV for image understanding. <br> \
                    - Low-cost SLAM system in blender. See our github repository <a href='https://github.com/ZAGsi/BlenderSLAM'>ZAGsi/BlenderSLAM</a>.",
 	"Dutch": "Dutch is my native language.",
-	"English": "I finished multiple academic degrees in English and I use English for my daily work.",
-	"German": "I finished multiple courses at the TU Munich in German. Currently I am taking more German lessons.",
-	"Slovene": "My highest level of Slovene education is the intermediate course Slovene at the faculty of Ljubljana.",
+	"English": "I finished multiple academic degrees in English and I use it for my daily work.",
+	"German": "I finished multiple courses given in the German language when I studied at the TU Munich. I recently gave a presentation at a German geospatial conference.",
+	"Slovene": "I finished a B1 Slovene course at the faculty of Ljubljana. I have worked in Slovenia for almost 2 years.",
 }
 
 function changeDefOver(e) {
